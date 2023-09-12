@@ -1,0 +1,107 @@
+/* header */
+header{
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar-collapse{
+  flex-grow: 0;
+}
+.navbar-nav{
+  --bs-nav-link-hover-color: rgb(230, 46, 76);
+}
+
+/* main */
+main{
+  height: 80%;  
+}
+#main-stats, #main-contact, #main-details{
+  margin-bottom: 120px;
+}
+.carousel, .carousel-inner, .carousel-item{
+  height: 400px;
+}
+.carousel-item>img{
+  object-fit: cover;
+  height: 100%;
+}
+#div-1, #div-2{
+  width: 100%;
+}
+.input-group-text{
+  background-color: white;
+  border: none;
+}
+.card{
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.card:hover{
+  transform: scale(1.1);
+  --bs-card-border-color: rgb(233, 78, 6);  
+}
+.btn-primary{
+  background-color:rgb(230, 46, 76);
+  border: rgb(176, 36, 60);
+  --bs-btn-hover-bg: rgb(209, 10, 43);  
+  --bs-btn-hover-border-color: rgb(187, 7, 37);  
+  --bs-btn-active-bg: rgb(233, 78, 6);
+  --bs-btn-active-border-color: rgb(176, 36, 60);
+}
+.btn-outline-primary{
+  --bs-btn-color: rgb(230, 46, 76);
+  --bs-btn-border-color: rgb(230, 46, 76);
+  --bs-btn-hover-bg: rgb(215, 32, 62);
+  --bs-btn-hover-border-color: rgb(230, 46, 76);  
+  --bs-btn-active-bg: rgb(233, 78, 6);  
+  --bs-btn-active-border-color: rgb(230, 46, 76);
+}
+#mensaje-error{
+  background-color: rgb(255, 167, 126);
+}
+
+/* estilos de prueba para corazon cards */
+#card-cont{
+  position: relative;
+}
+.icon{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 25px;
+  right: 25px;   
+}
+.icon:hover{
+  fill: rgb(246, 77, 77);
+}
+.heart-fill{
+  fill: rgb(232, 39, 39);
+}
+
+
+/* footer */
+footer{  
+  width: 100%;       
+  position: fixed;
+  bottom: 0; 
+}
+
+
+/* media queries */
+@media only screen and (min-width: 768px){
+  #div-1{
+    width: 50%;
+  }
+  #div-2{
+    width: 40%;
+  }
+  .categorias{
+    flex-wrap: nowrap;
+  }  
+}
+
+/* @media only screen and (min-width: 1024px){
+  
+} */
+
